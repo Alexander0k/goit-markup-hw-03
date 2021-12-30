@@ -36,6 +36,10 @@ img {
   margin: 0 auto;
   outline: 2px solid red;
 }
+.info-conteiner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /*--------------------- HEADER -----------------------*/
 .header {
@@ -130,10 +134,12 @@ img {
 
 /*--------------------- HERO -----------------------*/
 .hero {
+  justify-self: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
+  display: flex;
 }
 .hero-conteiner {
   text-align: center;
@@ -148,32 +154,31 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
+  justify-self: center;
+  max-width: 696px;
+  margin: auto;
 }
 
 .hero-btn {
   font-family: inherit;
   font-weight: bold;
-  font-size: 16px;
+  font-size: inherit;
   line-height: 1.87;
   display: flex;
-  align-items: center;
-  text-align: center;
+  margin-top: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------------------- INFO -----------------------*/
 .info {
   padding-top: 94px;
-  padding-bottom: 94px;
   display: flex;
 }
 
@@ -182,12 +187,16 @@ img {
 }
 
 .info-item {
-  margin-left: 0;
+  max-width: 270px;
+  min-width: 270px;
+}
+
+.info-item + .info-item {
+  margin-left: 30px;
 }
 
 .info-list {
   display: flex;
-  margin-right: 30px;
 }
 
 .info-list-title {
@@ -196,7 +205,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 30px;
+  margin-bottom: 10px;
   color: #212121;
 }
 
@@ -205,7 +214,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-right: 30px;
   color: #757575;
 }
 
@@ -298,17 +306,16 @@ img {
 /*--------------------- FOOTER -----------------------*/
 .footer-address {
   background-color: #2f303a;
-}
-.address {
-  margin-bottom: auto;
-}
-
-.footer-logo {
-  margin-bottom: 20px;
+  display: block;
 }
 .footer-list {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-logo-web {
@@ -331,6 +338,18 @@ img {
   color: #ffffff;
 }
 
+.footer-item {
+  display: block;
+  border-bottom: 9px;
+}
+.contakt-tel {
+  margin-top: 9px;
+}
+
+.contant-mail {
+  margin-top: 9px;
+}
+
 .footer-address {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -346,18 +365,18 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(24 / 14);
   letter-spacing: 0.02em;
   margin-bottom: 9px;
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
+  margin-top: 9px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }

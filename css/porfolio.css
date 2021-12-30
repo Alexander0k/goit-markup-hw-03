@@ -38,9 +38,13 @@ img {
 }
 /*--------------------- HEADER -----------------------*/
 .header {
+  display: flex;
+  align-items: center;
+  justify-self: center;
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 
 .header-btn:focus,
@@ -112,9 +116,12 @@ img {
 }
 
 /*--------------------- BUTTON -----------------------*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .button-menu {
-  margin-bottom: 56px;
   padding: 6px 22px;
   border: transparent;
   font-family: inherit;
@@ -140,6 +147,7 @@ img {
 }
 
 .portfolio-list-btn {
+  margin-bottom: 56px;
   display: flex;
   justify-content: center;
   width: calc(100% / 9 -30px);
@@ -148,7 +156,6 @@ img {
 
 .portfolio-btn {
   align-items: center;
-  padding-top: 94px;
   display: flex;
   border: transparent;
   align-items: center;
@@ -182,7 +189,6 @@ img {
 .portfolio-item {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
-  margin-bottom: 94px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -190,14 +196,10 @@ img {
   text-align: left;
 }
 
-/* .portfolio-item :not(:nth-child(3n + 3)) {
-  margin-right: 30px;
-} */
-
 .portfolio-title {
-  font-weight: bold;
+  margin-bottom: 4px;
   font-size: 18px;
-  line-height: calc(36px / 18px);
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: #212121;
 }
@@ -206,16 +208,16 @@ img {
 
 .footer-address {
   background-color: #2f303a;
-}
-.address {
-  margin-bottom: auto;
-}
-.footer-logo {
-  margin-bottom: 20px;
+  display: block;
 }
 .footer-list {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-logo-web {
@@ -227,6 +229,7 @@ img {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+
 .footer-logo-studio {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -237,7 +240,19 @@ img {
   color: #ffffff;
 }
 
-.address-footer {
+.footer-item {
+  display: block;
+  border-bottom: 9px;
+}
+.contakt-tel {
+  margin-top: 9px;
+}
+
+.contant-mail {
+  margin-top: 9px;
+}
+
+.footer-address {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -252,12 +267,13 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(24 / 14);
   letter-spacing: 0.02em;
-  color: #757575;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-tel {
+  margin-top: 9px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
