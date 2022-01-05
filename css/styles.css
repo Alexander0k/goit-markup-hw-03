@@ -290,7 +290,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -304,18 +303,23 @@ img {
 }
 
 /*--------------------- FOOTER -----------------------*/
-.footer-address {
-  background-color: #2f303a;
-  display: block;
-}
-.footer-list {
+.conteiner-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-address {
+  background-color: #2f303a;
+}
+
+.footer-adress-a {
+  margin-top: 20px;
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+  display: inline;
 }
 
 .footer-logo-web {

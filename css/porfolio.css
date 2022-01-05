@@ -44,7 +44,7 @@ img {
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-btn:focus,
@@ -206,15 +206,15 @@ img {
 
 /*--------------------- FOODER -----------------------*/
 
-.footer-address {
-  background-color: #2f303a;
-  display: block;
-}
-.footer-list {
+.conteiner-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.footer-address {
+  background-color: #2f303a;
+  display: block;
+}
 .footer-logo {
   display: block;
   margin-bottom: 20px;
